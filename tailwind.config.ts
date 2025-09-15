@@ -57,6 +57,23 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        sports: {
+          gold: "hsl(var(--sports-gold))",
+          orange: "hsl(var(--sports-orange))",
+          brown: "hsl(var(--warm-brown))",
+          blue: "hsl(var(--deep-blue))",
+          yellow: "hsl(var(--victory-yellow))",
+        }
+      },
+      backgroundImage: {
+        'gradient-hero': 'var(--gradient-hero)',
+        'gradient-warm': 'var(--gradient-warm)',
+        'gradient-stadium': 'var(--gradient-stadium)',
+      },
+      boxShadow: {
+        'glow': 'var(--shadow-glow)',
+        'warm': 'var(--shadow-warm)',
+        'victory': 'var(--shadow-victory)',
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -80,10 +97,31 @@ export default {
             height: "0",
           },
         },
+        "pulse-glow": {
+          "0%, 100%": {
+            boxShadow: "0 0 20px hsl(213 80% 48% / 0.3)",
+            transform: "scale(1)",
+          },
+          "50%": {
+            boxShadow: "0 0 40px hsl(213 80% 48% / 0.6)",
+            transform: "scale(1.02)",
+          },
+        },
+        "tv-flicker": {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0.95" },
+        },
+        "crowd-cheer": {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-2px)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "pulse-glow": "pulse-glow 2s ease-in-out infinite",
+        "tv-flicker": "tv-flicker 3s ease-in-out infinite",
+        "crowd-cheer": "crowd-cheer 1.5s ease-in-out infinite",
       },
     },
   },
