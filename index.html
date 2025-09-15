@@ -1,25 +1,283 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DYNAMO Sports Hub | Ultimate Ukrainian Sports Bar Experience</title>
-    <meta name="description" content="Experience the ultimate sports viewing at DYNAMO Sports Hub - Ukraine's premier sports bar with wall-to-wall TVs, craft drinks, delicious food, and an electrifying atmosphere for every game!" />
-    <meta name="author" content="DYNAMO Sports Hub" />
-    <meta name="keywords" content="sports bar Ukraine, football viewing, craft beer, Ukrainian restaurant, sports pub, live games, TV screens, sports entertainment" />
+    <meta name="description" content="Experience the ultimate sports viewing at DYNAMO Sports Hub - Ukraine's premier sports bar with wall-to-wall TVs, craft drinks, delicious food, and an electrifying atmosphere for every game!">
+    <meta name="keywords" content="sports bar Ukraine, football viewing, craft beer, Ukrainian restaurant, sports pub, live games, TV screens, sports entertainment">
+    
+    <meta property="og:title" content="DYNAMO Sports Hub | Ultimate Ukrainian Sports Bar Experience">
+    <meta property="og:description" content="Experience the ultimate sports viewing at DYNAMO Sports Hub - Ukraine's premier sports bar with wall-to-wall TVs, craft drinks, delicious food, and an electrifying atmosphere for every game!">
+    <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="logo-circle">
+                    <span>D</span>
+                </div>
+                <h1 class="brand-name">DYNAMO</h1>
+                <span class="brand-subtitle">Sports Hub</span>
+            </div>
+            
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#experience">Experience</a>
+                <a href="#food">Food & Drinks</a>
+                <a href="#contact">Contact</a>
+            </div>
+            
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#home" onclick="closeMobileMenu()">Home</a>
+            <a href="#experience" onclick="closeMobileMenu()">Experience</a>
+            <a href="#food" onclick="closeMobileMenu()">Food & Drinks</a>
+            <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+        </div>
+    </nav>
 
-    <meta property="og:title" content="DYNAMO Sports Hub | Ultimate Ukrainian Sports Bar Experience" />
-    <meta property="og:description" content="Experience the ultimate sports viewing at DYNAMO Sports Hub - Ukraine's premier sports bar with wall-to-wall TVs, craft drinks, delicious food, and an electrifying atmosphere for every game!" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">DYNAMO</span>
+                    <span class="title-line">SPORTS HUB</span>
+                </h1>
+                <p class="hero-description">
+                    Ukraine's premier sports destination where every match comes alive on wall-to-wall screens, 
+                    craft drinks flow freely, and the energy never stops!
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Watch Live Now</button>
+                    <button class="btn btn-secondary">Find Us</button>
+                </div>
+                <div class="hero-info">
+                    <div class="info-item">
+                        <span class="info-label">Open Daily</span>
+                        <span class="info-value">11:00 - 02:00</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Live Sports</span>
+                        <span class="info-value">24/7</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2>THE ULTIMATE SPORTS EXPERIENCE</h2>
+                <p>Immerse yourself in the action with our state-of-the-art viewing setup and electric atmosphere</p>
+            </div>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+            <div class="tv-showcase">
+                <div class="showcase-card">
+                    <img src="src/assets/tv-wall.jpg" alt="Multiple TV screens showing sports" class="showcase-image">
+                    <div class="showcase-content">
+                        <h3>TV Wall Showcase</h3>
+                        <p>50+ screens ensuring you never miss a moment of the action, no matter where you sit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📺</div>
+                    <h3>50+ HD Screens</h3>
+                    <p>Wall-to-wall displays ensuring perfect views from every angle, broadcasting all major sports leagues and tournaments.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Social Atmosphere</h3>
+                    <p>Join fellow fans in celebrating victories and sharing the excitement of every goal, try, and touchdown.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔊</div>
+                    <h3>Premium Sound</h3>
+                    <p>Crystal-clear audio system that puts you right in the stadium atmosphere without missing any commentary.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>All Sports Covered</h3>
+                    <p>From football to basketball, rugby to tennis - we broadcast every major sporting event live.</p>
+                </div>
+            </div>
+
+            <div class="energy-section">
+                <div class="energy-content">
+                    <div class="energy-text">
+                        <h3>Feel the Energy</h3>
+                        <p>Experience the electric atmosphere as fans unite to cheer for their teams. Our venue transforms into a stadium of excitement where every victory is celebrated together!</p>
+                    </div>
+                    <div class="energy-image">
+                        <img src="src/assets/happy-crowd.jpg" alt="Happy crowd celebrating" class="crowd-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food & Drinks Section -->
+    <section id="food" class="food-drinks">
+        <div class="container">
+            <div class="food-hero">
+                <div class="food-content">
+                    <div class="food-text">
+                        <h2>GAME DAY FUEL</h2>
+                        <p>Indulge in our carefully crafted menu of game day favorites, premium beverages, and sharing platters perfect for watching with friends.</p>
+                    </div>
+                    <img src="src/assets/bar-food.jpg" alt="Delicious bar food spread" class="food-image">
+                </div>
+            </div>
+
+            <div class="offerings-grid">
+                <div class="offering-card">
+                    <div class="offering-icon">🍺</div>
+                    <h3>Craft Beers</h3>
+                    <p>Local and international brews on tap, plus premium bottled selection</p>
+                </div>
+                <div class="offering-card">
+                    <div class="offering-icon">🍔</div>
+                    <h3>Game Day Eats</h3>
+                    <p>Burgers, wings, nachos, and classic pub favorites done right</p>
+                </div>
+                <div class="offering-card">
+                    <div class="offering-icon">🍽️</div>
+                    <h3>Sharing Platters</h3>
+                    <p>Perfect for groups - loaded platters designed for sharing and celebrating</p>
+                </div>
+                <div class="offering-card">
+                    <div class="offering-icon">🥤</div>
+                    <h3>Non-Alcoholic</h3>
+                    <p>Fresh juices, premium sodas, and specialty mocktails for all ages</p>
+                </div>
+            </div>
+
+            <div class="menu-cta">
+                <button class="btn btn-primary">View Full Menu</button>
+            </div>
+
+            <div class="specials-section">
+                <h3>Game Day Specials</h3>
+                <div class="specials-grid">
+                    <div class="special-card">
+                        <h4>Happy Hour</h4>
+                        <p>Daily 16:00-19:00<br>20% off all drinks and appetizers</p>
+                    </div>
+                    <div class="special-card">
+                        <h4>Group Discounts</h4>
+                        <p>Parties of 8+ get 15% off total bill<br>Perfect for team celebrations!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>VISIT US TODAY</h2>
+                <p>Ready to experience the ultimate sports viewing? Here's everything you need to know.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>📍 Location</h3>
+                    <div class="contact-info">
+                        <p><strong>123 Sports Avenue<br>Kyiv, Ukraine 01001</strong></p>
+                        <p>🚇 2 minutes from Maidan Metro</p>
+                        <p>🚗 Free parking available</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <h3>🕒 Hours</h3>
+                    <div class="contact-info">
+                        <p><strong>Monday - Sunday</strong><br>11:00 AM - 2:00 AM</p>
+                        <p><strong>Tournament Days</strong><br>Extended hours for major events</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <h3>📞 Contact</h3>
+                    <div class="contact-info">
+                        <p><strong>Phone:</strong> +380 44 123 4567</p>
+                        <p><strong>WhatsApp:</strong> +380 67 890 1234</p>
+                        <p><strong>Email:</strong> info@dynamosportshub.ua</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <h3>Ready for Game Day?</h3>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary">Reserve Table</button>
+                    <button class="btn btn-secondary">Call Now</button>
+                </div>
+                <p>Follow us on social media for live updates and match schedules!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-circle">
+                            <span>D</span>
+                        </div>
+                        <div>
+                            <h3>DYNAMO Sports Hub</h3>
+                            <p>Where Every Game Comes Alive</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#food">Food & Drinks</a>
+                    <a href="#contact">Contact</a>
+                </div>
+
+                <div class="footer-info">
+                    <h4>Game Day Info</h4>
+                    <p>📍 123 Sports Avenue, Kyiv</p>
+                    <p>📞 +380 44 123 4567</p>
+                    <p>🕒 Daily 11:00 - 02:00</p>
+                    <p>🏆 All Major Sports Covered</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 DYNAMO Sports Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
